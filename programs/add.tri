@@ -1,0 +1,39 @@
+let
+    var n1 : Integer;
+    var n2 : Integer;
+
+    proc putstr () ~
+    let
+        var t : Integer
+    in
+    begin
+        put ('S'); put ('a'); put ('m'); put ('e'); put ('!'); puteol ();
+    end;
+
+    proc parseInt (x: Integer, y: Integer) ~
+    let
+        var sum: Integer;
+        var product : Integer
+    in
+    begin
+        sum := x + y;
+        product := x * y;
+        putint (sum);
+        puteol ();
+        putint (product);
+        puteol ();
+        if x = y
+        then putstr ()
+        else put (' ');
+    end
+
+
+in
+begin
+    getint(var n1);
+    getint(var n2);
+    puteol ();
+    parseInt (n1, n2);
+    puteol ()
+
+end
