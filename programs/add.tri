@@ -31,9 +31,9 @@ let
 in
 begin
     getint(var n1);
-    getint(var n2);
-    puteol ();
-    parseInt (n1, n2);
-    puteol ()
+        getint(var n2);
+        puteol ();
+        parseInt (n1, n2);
+        puteol ()
 
 end
